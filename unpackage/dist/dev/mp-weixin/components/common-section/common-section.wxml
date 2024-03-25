@@ -1,0 +1,1 @@
+<view class="section-layout data-v-a3618ca1"><view class="section-header data-v-a3618ca1"><text class="title data-v-a3618ca1">{{a}}</text><block wx:if="{{$slots.right}}"><slot name="right"></slot></block><block wx:else><text class="more data-v-a3618ca1">更多</text></block></view><slot></slot></view>

@@ -27,12 +27,33 @@
 		  "path" : "pages/classify/detail",
 		  "style" : 
 		  {
-		    "navigationBarTitleText" : "",
-		    "enablePullDownRefresh" : false
+		    "navigationBarTitleText" : "详情",
+		    "enablePullDownRefresh" : false,
+        "navigationBarTextStyle": "black"
 		  }
-		}
+		},
+
+		{
+		  "path" : "pages/search/search",
+		  "style" : 
+		  {
+		    "navigationBarTitleText" : "搜索",
+		    "enablePullDownRefresh" : false,
+        "navigationBarTextStyle": "black"
+		  }
+		},
+    {
+      "path" : "pages/preview/preview",
+      "style" : 
+      {
+        "navigationBarTitleText" : "预览",
+        "enablePullDownRefresh" : false,
+        "navigationStyle": "custom"
+      }
+    }
 	],
 	"globalStyle": {
+    "navigationStyle": "default",
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "wallpaper",
 		"navigationBarBackgroundColor": "#F8F8F8",

@@ -2,7 +2,7 @@
   <view class="classify-layout page-bg">
     <custom-nav-bar title="分类"></custom-nav-bar>
     <view class="theme-list">
-      <theme-item v-for="item in 12" :key="item" @click="toDetail"></theme-item>
+      <theme-item v-for="item in 12" :key="item" @tap="toDetail"></theme-item>
     </view>
   </view>
 </template>

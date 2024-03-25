@@ -3,8 +3,14 @@
     <custom-nav-bar title="壁纸"></custom-nav-bar>
     <view class="banner">
       <swiper autoplay indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="rgba(255,255,255)" circular>
-        <swiper-item v-for="item in 3" :key="item">
-            <image :src="`../../common/images/banner${item}.jpg`" mode="aspectFill"></image>
+        <swiper-item>
+            <image src="../../common/images/banner1.jpg" mode="aspectFill"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="../../common/images/banner2.jpg" mode="aspectFill"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="../../common/images/banner3.jpg" mode="aspectFill"></image>
         </swiper-item>
       </swiper>
     </view>
@@ -46,8 +52,8 @@
       </template>
       <template #default>
         <view class="theme-list">
-          <theme-item v-for="item in 8" :key="item" @click="toDetail"></theme-item>
-          <theme-item :status="false" @click="goClassify"></theme-item>
+          <theme-item v-for="item in 8" :key="item" @tap="toDetail"></theme-item>
+          <theme-item :status="false" @tap="goClassify"></theme-item>
         </view>
       </template>
     </common-section>

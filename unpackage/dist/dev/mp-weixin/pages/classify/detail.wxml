@@ -1,0 +1,1 @@
+<view class="detail-layout data-v-d5b62ebe"><image wx:for="{{a}}" wx:for-item="item" wx:key="a" class="image data-v-d5b62ebe" src="{{b}}" mode="aspectFill" bindtap="{{item.b}}"></image></view>

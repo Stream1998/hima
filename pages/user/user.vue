@@ -1,26 +1,32 @@
 <template>
-  <view class="user-layout page-bg">
+  <view class="user-layout page-bg" :style="{paddingTop: getStatusBarHeight() + getMenuButtonHeight() + 'px'}">
     <view class="info flex-center">
       <image class="avatar" src="../../static/images/logo.png" mode="aspectFill"></image>
       <text class="nickname">良月玖</text>
       <text class="address">归属地：广东</text>
     </view>
     
-    <uni-list class="section">
-      <uni-list-item show-extra-icon :extra-icon="downloadIcon" link title="我的下载"  rightText="0"/>
-      <uni-list-item show-extra-icon :extra-icon="rateIcon" link title="我的评分" rightText="0" />
-      <uni-list-item show-extra-icon :extra-icon="contactIcon" link title="联系客服" />
-    </uni-list>
+    <view class="section">
+      <uni-list>
+        <uni-list-item show-extra-icon :extra-icon="downloadIcon" link title="我的下载"  rightText="0"/>
+        <uni-list-item show-extra-icon :extra-icon="rateIcon" link title="我的评分" rightText="0" />
+        <uni-list-item show-extra-icon :extra-icon="contactIcon" link title="联系客服" />
+      </uni-list>
+    </view>
     
-    <uni-list class="section">
-      <uni-list-item show-extra-icon :extra-icon="updateIcon" link title="订阅更新" />
-      <uni-list-item show-extra-icon :extra-icon="questionIcon" link title="常见问题" />
-    </uni-list>
+    <view class="section">
+      <uni-list>
+        <uni-list-item show-extra-icon :extra-icon="updateIcon" link title="订阅更新" />
+        <uni-list-item show-extra-icon :extra-icon="questionIcon" link title="常见问题" />
+      </uni-list>
+    </view>
+    
   </view>
 </template>
 
 <script setup>
 import { ref } from 'vue';
+import { getStatusBarHeight, getMenuButtonHeight } from "@/utils/system.js";
 const commonConfig = {
   color: '#27b48d',
   size: '22',

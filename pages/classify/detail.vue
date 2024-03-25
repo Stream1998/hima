@@ -1,11 +1,22 @@
 <template>
   <view class="detail-layout">
-    <image v-for="item in 12" :key="item" class="image" src="../../common/images/classify2.jpg" mode="aspectFill"></image>
+    <image 
+      v-for="item in 12" 
+      :key="item" 
+      class="image" 
+      src="../../common/images/classify2.jpg"
+      mode="aspectFill"
+      @tap="preview"
+    ></image>
   </view>
 </template>
 
 <script setup>
-  
+const preview = () => {
+  uni.navigateTo({
+    url: "/pages/preview/preview"
+  })
+}  
 </script>
 
 <style lang="scss" scoped>
